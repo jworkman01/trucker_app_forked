@@ -1,0 +1,73 @@
+type Cart @model @auth(rules: [{ allow: public }]) {
+	id: ID!
+	item: [String!]
+	price: Float!
+	orders: Orders @hasOne
+	Driver: Driver @hasOne
+}
+
+type Orders @model @auth(rules: [{ allow: public }]) {
+	id: ID!
+	price: Float!
+	quantity: Int!
+	Driver: Driver @hasOne
+	Products: [Product] @hasMany(indexName: "byOrders", fields: ["id"])
+}
+
+type Catalog @model @auth(rules: [{ allow: public }]) {
+	id: ID!
+	Products: [Product] @hasMany(indexName: "byCatalog", fields: ["id"])
+}
+
+type Product @model @auth(rules: [{ allow: public }]) {
+	id: ID!
+	name: String!
+	price: String!
+	desc: String!
+	catalog_ID: ID!
+	Catalog_Product_ID: ID!
+	catalogID: ID! @index(name: "byCatalog")
+	ordersID: ID! @index(name: "byOrders")
+}
+
+type Admin @model @auth(rules: [{ allow: public }]) {
+	id: ID!
+	fName: String!
+	lName: String!
+	uName: String!
+	email: String!
+	passWd: String!
+	phoneNumber: String
+}
+
+type Sponsor @model @auth(rules: [{ allow: public }]) {
+	id: ID!
+	fName: String!
+	lName: String!
+	uName: String!
+	passWd: String!
+	email: String!
+	phoneNumber: String
+	accessLevel: String!
+	company: String!
+	Drivers: [Driver] @hasMany(indexName: "bySponsor", fields: ["id"])
+	Catalog: Catalog @hasOne
+}
+
+type Driver @model @auth(rules: [{ allow: public }]) {
+	id: ID!
+	fName: String!
+	lName: String!
+	uName: String!
+	email: String!
+	passWd: String!
+	points: Int
+	phoneNumber: String
+	sponsorID: ID! @index(name: "bySponsor")
+}
+
+type Note @model @auth(rules: [{ allow: public }]) {
+	id: ID!
+	name: String!
+	description: String
+}
