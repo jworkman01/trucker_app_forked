@@ -1,12 +1,13 @@
 import React from "react";
 import { Heading, View, Card } from "@aws-amplify/ui-react";
-function ProfilePage() {
+
+function HomePage() {
 	return (
-		<View className="ProfilePage">
+		<View className="HomePage">
 			<Card>
-				<Heading level={1}>Profile Page</Heading>
+				<Heading level={1}>Home Page</Heading>
 			</Card>
 		</View>
 	);
 }
-export default ProfilePage;
+export default HomePage;

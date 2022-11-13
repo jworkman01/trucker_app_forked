@@ -2,27 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import AccountPage from "./pages/AccountPage";
-import CatalogPage from "./pages/CatalogPage";
-import ProfilePage from "./pages/ProfilePage";
 import reportWebVitals from "./reportWebVitals";
 import { Amplify } from "aws-amplify";
 import config from "./aws-exports";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
 
 Amplify.configure(config);
-
-<BrowserRouter>
-	<Routes>
-		<Route path="/" element={<Layout />}>
-			<Route index element={<App />} />
-			<Route path="AccountPage" element={<AccountPage />} />
-			<Route path="CatalogPage" element={<CatalogPage />} />
-			<Route path="ProfilePage" element={<ProfilePage />} />
-		</Route>
-	</Routes>
-</BrowserRouter>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Heading, View, Card } from "@aws-amplify/ui-react";
 
-const AccountPage = () => {
+function AccountPage() {
 	return (
 		<View className="AccountPage">
 			<Card>
@@ -10,5 +10,5 @@ const AccountPage = () => {
 			</Card>
 		</View>
 	);
-};
+}
 export default AccountPage;

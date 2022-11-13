@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Heading, View, Card } from "@aws-amplify/ui-react";
-const CatalogPage = () => {
+function CatalogPage() {
 	return (
 		<View className="CatalogPage">
 			<Card>
@@ -9,5 +9,5 @@ const CatalogPage = () => {
 			</Card>
 		</View>
 	);
-};
+}
 export default CatalogPage;
