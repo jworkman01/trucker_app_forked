@@ -12,7 +12,7 @@ import {
 
 //import { HomePage } from './ui-components';
 
-function App({ signOut }) {
+function App() {
 	return (
 		<View className="App">
 			<Card>
@@ -21,4 +21,4 @@ function App({ signOut }) {
 		</View>
 	);
 }
-export default withAuthenticator(App);
+export default App;

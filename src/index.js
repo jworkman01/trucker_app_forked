@@ -17,9 +17,9 @@ Amplify.configure(config);
 	<Routes>
 		<Route path="/" element={<Layout />}>
 			<Route index element={<App />} />
-			<Route path="account-page" element={<AccountPage />} />
-			<Route path="catalog-page" element={<CatalogPage />} />
-			<Route path="profile-page" element={<ProfilePage />} />
+			<Route path="AccountPage" element={<AccountPage />} />
+			<Route path="CatalogPage" element={<CatalogPage />} />
+			<Route path="ProfilePage" element={<ProfilePage />} />
 		</Route>
 	</Routes>
 </BrowserRouter>;
