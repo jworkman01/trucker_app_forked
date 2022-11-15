@@ -8,13 +8,13 @@ import ProfilePage from "./pages/ProfilePage";
 import AccountSelectionPage from "./pages/AccountSelectionPage";
 import LoginPage from "./pages/LoginPage";
 import DriverCreationPage from "./pages/DriverCreationPage";
-import ReactDOM from "react-dom/client";
-
 import PurchaseHistoryPage from "./pages/PurchaseHistoryPage";
 import ManagePurchasesPage from "./pages/ManagePurchasesPage";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import ReactDOM from "react-dom/client";
 import { NavBar } from "./ui-components";
+import { Amplify, Auth } from "aws-amplify";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import awsconfig from "./aws-exports";
 
 function App() {
 	return (
@@ -73,6 +73,8 @@ function App() {
 		</Router>
 	);
 }
+Amplify.configure(awsconfig);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<HomePage />);
 export default App;

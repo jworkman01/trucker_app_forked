@@ -17,6 +17,9 @@
       },
       "storage": {
         "s3team24storage2a271ea6": {}
+      },
+      "api": {
+        "Team24": {}
       }
     }
   }
