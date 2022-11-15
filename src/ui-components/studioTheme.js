@@ -44,7 +44,7 @@ export default createTheme({
         modal: {
           width: { value: "{space.relative.full}" },
           height: { value: "{space.relative.full}" },
-          backgroundColor: { value: "{colors.overlay.50.value}" },
+          backgroundColor: { value: "hsla(0, 0%, 0%, 0.5)" },
           top: { value: "{space.zero}" },
           left: { value: "{space.zero}" },
         },

@@ -94,28 +94,26 @@ export declare const Orders: (new (init: ModelInit<Orders, OrdersMetaData>) => O
 
 type EagerDriver = {
   readonly id: string;
-  readonly fName: string;
-  readonly lName: string;
-  readonly uName: string;
-  readonly email: string;
-  readonly passWd: string;
+  readonly fName?: string | null;
+  readonly lName?: string | null;
+  readonly uName?: string | null;
+  readonly email?: string | null;
+  readonly passWd?: string | null;
   readonly points?: number | null;
   readonly phoneNumber?: string | null;
-  readonly sponsorID: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
 
 type LazyDriver = {
   readonly id: string;
-  readonly fName: string;
-  readonly lName: string;
-  readonly uName: string;
-  readonly email: string;
-  readonly passWd: string;
+  readonly fName?: string | null;
+  readonly lName?: string | null;
+  readonly uName?: string | null;
+  readonly email?: string | null;
+  readonly passWd?: string | null;
   readonly points?: number | null;
   readonly phoneNumber?: string | null;
-  readonly sponsorID: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -218,7 +216,6 @@ type EagerSponsor = {
   readonly phoneNumber?: string | null;
   readonly accessLevel: string;
   readonly company: string;
-  readonly Drivers?: (Driver | null)[] | null;
   readonly Catalog?: Catalog | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
@@ -235,7 +232,6 @@ type LazySponsor = {
   readonly phoneNumber?: string | null;
   readonly accessLevel: string;
   readonly company: string;
-  readonly Drivers: AsyncCollection<Driver>;
   readonly Catalog: AsyncItem<Catalog | undefined>;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;

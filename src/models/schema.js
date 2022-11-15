@@ -224,35 +224,35 @@ export const schema = {
                     "name": "fName",
                     "isArray": false,
                     "type": "String",
-                    "isRequired": true,
+                    "isRequired": false,
                     "attributes": []
                 },
                 "lName": {
                     "name": "lName",
                     "isArray": false,
                     "type": "String",
-                    "isRequired": true,
+                    "isRequired": false,
                     "attributes": []
                 },
                 "uName": {
                     "name": "uName",
                     "isArray": false,
                     "type": "String",
-                    "isRequired": true,
+                    "isRequired": false,
                     "attributes": []
                 },
                 "email": {
                     "name": "email",
                     "isArray": false,
                     "type": "String",
-                    "isRequired": true,
+                    "isRequired": false,
                     "attributes": []
                 },
                 "passWd": {
                     "name": "passWd",
                     "isArray": false,
                     "type": "String",
-                    "isRequired": true,
+                    "isRequired": false,
                     "attributes": []
                 },
                 "points": {
@@ -267,13 +267,6 @@ export const schema = {
                     "isArray": false,
                     "type": "String",
                     "isRequired": false,
-                    "attributes": []
-                },
-                "sponsorID": {
-                    "name": "sponsorID",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": true,
                     "attributes": []
                 },
                 "createdAt": {
@@ -299,15 +292,6 @@ export const schema = {
                 {
                     "type": "model",
                     "properties": {}
-                },
-                {
-                    "type": "key",
-                    "properties": {
-                        "name": "bySponsor",
-                        "fields": [
-                            "sponsorID"
-                        ]
-                    }
                 },
                 {
                     "type": "auth",
@@ -672,20 +656,6 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
-                "Drivers": {
-                    "name": "Drivers",
-                    "isArray": true,
-                    "type": {
-                        "model": "Driver"
-                    },
-                    "isRequired": false,
-                    "attributes": [],
-                    "isArrayNullable": true,
-                    "association": {
-                        "connectionType": "HAS_MANY",
-                        "associatedWith": "sponsorID"
-                    }
-                },
                 "Catalog": {
                     "name": "Catalog",
                     "isArray": false,
@@ -819,5 +789,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.3.1",
-    "version": "159f49b64e23f5082c34356526fbc7d9"
+    "version": "ca71b2e1d580fa06e0862acf2644e35e"
 };

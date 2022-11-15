@@ -7,7 +7,6 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import NavBar from "./NavBar";
 import { Text, View } from "@aws-amplify/ui-react";
 import HomePageBox from "./HomePageBox";
 export default function HomePage(props) {
@@ -27,19 +26,6 @@ export default function HomePage(props) {
       {...rest}
       {...getOverrideProps(overrides, "HomePage")}
     >
-      <NavBar
-        width="1440px"
-        height="81px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        position="absolute"
-        top="0px"
-        left="0px"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "NavBar")}
-      ></NavBar>
       <Text
         fontFamily="Playfair Display"
         fontSize="64px"

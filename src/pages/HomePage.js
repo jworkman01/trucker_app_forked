@@ -1,11 +1,12 @@
 import React from "react";
-import { Heading, View, Card } from "@aws-amplify/ui-react";
+import { View, Card } from "@aws-amplify/ui-react";
+import { HomepageFigma } from "./../ui-components";
 
 function HomePage() {
 	return (
 		<View className="HomePage">
 			<Card>
-				<Heading level={1}>Home Page</Heading>
+				<HomepageFigma />
 			</Card>
 		</View>
 	);

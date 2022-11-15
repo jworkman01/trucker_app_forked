@@ -1,10 +1,12 @@
 import React from "react";
-import { Heading, View, Card } from "@aws-amplify/ui-react";
+import { View, Card } from "@aws-amplify/ui-react";
+import { ProfilePageComp } from "./../ui-components";
+
 function ProfilePage() {
 	return (
 		<View className="ProfilePage">
 			<Card>
-				<Heading level={1}>Profile Page</Heading>
+				<ProfilePageComp />
 			</Card>
 		</View>
 	);

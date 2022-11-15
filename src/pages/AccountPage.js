@@ -1,14 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { Heading, View, Card } from "@aws-amplify/ui-react";
+import { AccountPageComp } from "./../ui-components";
+
+import Amplify from "aws-amplify";
+import aws_exports from "../aws-exports";
+Amplify.configure(aws_exports);
 
 function AccountPage() {
 	return (
-		<View className="AccountPage">
-			<Card>
-				<Heading level={1}>Account Page</Heading>
-			</Card>
-		</View>
+		<div>
+			<AccountPageComp />
+		</div>
 	);
 }
+
 export default AccountPage;

@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import { Heading, View, Card } from "@aws-amplify/ui-react";
+
 function CatalogPage() {
 	return (
 		<View className="CatalogPage">
