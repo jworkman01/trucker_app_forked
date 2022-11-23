@@ -1,57 +1,25 @@
-import "./App.css";
-import "@aws-amplify/ui-react/styles.css";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { NavBar } from "./ui-components";
-import AccountPage from "./pages/AccountPage";
-import CatalogPage from "./pages/CatalogPage";
-import HomePage from "./pages/HomePage";
-import ProfilePage from "./pages/ProfilePage";
-import PurchaseHistoryPage from "./pages/PurchaseHistoryPage";
-import ManagePurchasesPage from "./pages/ManagePurchasesPage";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-	return (
-		<Router>
-			<NavBar />
-			<div className="App">
-				<Routes>
-					<Route exact path="/" element={<HomePage />}></Route>
-					<Route
-						exact
-						path="/AccountPage"
-						element={<AccountPage />}
-					></Route>
-					<Route
-						exact
-						path="/CatalogPage"
-						element={<CatalogPage />}
-					></Route>
-					<Route
-						exact
-						path="/ProfilePage"
-						element={<ProfilePage />}
-					></Route>
-					<Route
-						exact
-						path="/HomePage"
-						element={<HomePage />}
-					></Route>
-					<Route
-						exact
-						path="/PurchaseHistoryPage"
-						element={<PurchaseHistoryPage />}
-					></Route>
-					<Route
-						exact
-						path="/ManagePurchasesPage"
-						element={<ManagePurchasesPage />}
-					></Route>
-				</Routes>
-			</div>
-		</Router>
-	);
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
-//const root = ReactDOM.createRoot(document.getElementById("root"));
-//root.render(<HomePage />);
+
 export default App;
