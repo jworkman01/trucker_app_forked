@@ -51,3 +51,5 @@ export { default as Features4x1 } from "./Features4x1";
 export { default as CommentCard } from "./CommentCard";
 export { default as ReviewCard } from "./ReviewCard";
 export { default as studioTheme } from "./studioTheme";
+export { default as AdmiCreateForm } from "./AdmiCreateForm";
+export { default as AdmiUpdateForm } from "./AdmiUpdateForm";

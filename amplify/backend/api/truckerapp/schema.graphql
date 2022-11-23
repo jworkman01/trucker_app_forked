@@ -1,0 +1,6 @@
+type Admi @model @auth(rules: [{allow: groups, groups: ["admin"], operations: [read, create, update, delete]}, {allow: owner}]) {
+  id: ID!
+  name: String
+  email: String
+  phone_number: String
+}
