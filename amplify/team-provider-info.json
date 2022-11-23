@@ -22,7 +22,8 @@
         }
       },
       "auth": {
-        "truckerapp398d679a": {}
+        "truckerapp398d679a": {},
+        "truckerapp": {}
       },
       "function": {
         "truckerapp398d679aPostConfirmation": {
