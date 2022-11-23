@@ -3,7 +3,7 @@
   "cognitoConfig": {
     "identityPoolName": "testAuthIdentityPool",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "trucke739af37d",
+    "resourceNameTruncated": "truckecced8c35",
     "userPoolName": "truckerapp",
     "autoVerifiedAttributes": [
       "email"
@@ -28,7 +28,6 @@
       "name",
       "email",
       "phone_number",
-      "address",
       "preferred_username"
     ],
     "aliasAttributes": [],
@@ -36,9 +35,9 @@
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "trucke739af37d_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "truckecced8c35_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "739af37d",
+    "sharedId": "cced8c35",
     "resourceName": "truckerapp",
     "authSelections": "identityPoolAndUserPool",
     "serviceName": "Cognito",

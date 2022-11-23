@@ -20,7 +20,6 @@
           "NAME",
           "EMAIL",
           "PHONE_NUMBER",
-          "ADDRESS",
           "PREFERRED_USERNAME"
         ],
         "passwordProtectionSettings": {
